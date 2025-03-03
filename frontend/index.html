@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALLMON - Story Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📖 SALLMON - Story Analysis</h1>
+        <textarea id="storyInput" placeholder="Paste your story here..." rows="8"></textarea>
+
+        <h3>Select Analysis Options:</h3>
+        <label><input type="checkbox" id="totalWords" checked> Total Words</label><br>
+        <label><input type="checkbox" id="differentWords"> Different Words (Lexemes)</label><br>
+        <label><input type="checkbox" id="typeTokenRatio"> Type-Token Ratio</label><br>
+        <label><input type="checkbox" id="numMorphemes"> Morphemes</label><br>
+        <label><input type="checkbox" id="numClauses"> Clauses</label><br>
+        <label><input type="checkbox" id="subordinateClauses"> Subordinate Clauses</label><br>
+        <label><input type="checkbox" id="subordinationIndex"> Syntactic Subordination Index</label><br>
+        <label><input type="checkbox" id="verbErrors"> Verb Errors</label><br>
+        <label><input type="checkbox" id="verbErrorsPerClause"> Verb Errors per Clause</label><br>
+        <label><input type="checkbox" id="wordChoiceErrors"> Word Choice Errors</label><br>
+        <label><input type="checkbox" id="wordChoiceErrorsPerWord"> Word Choice Errors per Total Words</label><br>
+        <label><input type="checkbox" id="storyGrammar"> Story Grammar Elements</label><br>
+        <label><input type="checkbox" id="cohesion"> Cohesion</label><br>
+
+        <button id="analyzeButton">Analyze</button>
+
+        <div id="result-container">
+            <h2>📊 Analysis Results:</h2>
+            <div id="result"></div>
+            <h3>✅ Accuracy: <span id="accuracy"></span>%</h3>  <!-- Show Accuracy -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
